@@ -24,6 +24,7 @@ body header {
   padding-top: 2rem;
 }
 body header .container img {
+  max-height: 100%;
   cursor: pointer;
   max-height: 55px;
   transition: 0.2s all;
@@ -103,7 +104,7 @@ body article .links div {
 body article .links div:hover {
   transition: 0.2s all;
   border: 1px solid hsl(300, 69%, 71%);
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 body article .links div:first-child {
   margin-left: 0;
@@ -130,6 +131,9 @@ body article .links div i:hover {
   }
   body section .container .about {
     padding: 0;
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0 10rem;
   }
   body article {
     position: fixed;
@@ -142,10 +146,53 @@ body article .links div i:hover {
     max-width: 600px;
   }
   body section .container {
-    flex-direction: column;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body section .container img {
+    height: 400px;
   }
   body section .container .about {
-    padding: 0;
+    margin: 0 4rem;
+  }
+  body article {
+    padding: 3rem 0 1rem 0;
+    position: static;
+  }
+  body article .links {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container {
+    max-width: 400px;
+  }
+  body {
+    background-image: url("../images/bg-mobile.svg") no-repeat;
+  }
+  body header img {
+    height: 45px;
+  }
+  body section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body section .container img {
+    height: 250px;
+  }
+  body section .container .about {
+    margin: 0 1rem;
+  }
+  body section .container .about h1 {
+    font-size: 1.6rem;
+  }
+  body section .container .about p {
+    font-size: 1rem;
+  }
+  body section .container .about button {
+    height: 40px;
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=index.css.map */

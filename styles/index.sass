@@ -28,6 +28,7 @@ body
         padding-top: 2rem
         .container
             img
+                max-height: 100%
                 cursor: pointer
                 max-height: 55px
                 transition: 0.2s all
@@ -93,7 +94,7 @@ body
                 &:hover
                     transition: 0.2s all
                     border: 1px solid $soft-magenta
-                    transform: scale(1.1)
+                    transform: scale(0.9)
                 &:first-child
                     margin-left: 0
                 i
@@ -116,6 +117,10 @@ body
                 margin: 0 auto
                 .about
                     padding: 0
+                    text-align: center
+                    padding-top: 2rem
+                    margin: 0 10rem
+
         article
             position: fixed
             bottom: 6%
@@ -127,7 +132,40 @@ body
     body
         section
             .container
-                flex-direction: column
-                margin: 0 auto
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    height: 400px
                 .about
-                    padding: 0
+                    margin: 0 4rem
+        article
+            padding: 3rem 0 1rem 0
+            position: static
+            .links
+                justify-content: center
+
+@media screen and (max-width: 630px)
+    .container
+        max-width: 400px
+    body
+        background-image: url('../images/bg-mobile.svg') no-repeat
+        header
+            img
+                height: 45px
+        section
+            .container
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    height: 250px
+                .about
+                    margin: 0 1rem
+                    h1
+                        font-size: 1.6rem
+                    p
+                        font-size: 1rem
+                    button
+                        height: 40px
+                        font-size: 0.8rem
