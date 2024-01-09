@@ -1,1 +1,151 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+h1, p {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("../images/bg-desktop.svg");
+}
+body header {
+  padding-top: 2rem;
+}
+body header .container img {
+  cursor: pointer;
+  max-height: 55px;
+  transition: 0.2s all;
+}
+body header .container img:hover {
+  transition: 0.2s all;
+  transform: scale(1.1);
+}
+body section {
+  padding-top: 4rem;
+}
+body section .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+body section .container img {
+  cursor: pointer;
+  transition: 0.2s all;
+}
+body section .container img:hover {
+  transition: 0.2s all;
+  transform: scale(1.025);
+}
+body section .container .about {
+  padding: 3rem 0 0 3rem;
+}
+body section .container .about h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+body section .container .about p {
+  font-size: 1.1rem;
+  padding-bottom: 1.9rem;
+}
+body section .container .about button {
+  font-family: "Poppins", sans-serif;
+  color: hsl(257, 40%, 49%);
+  font-size: 1.14rem;
+  background-color: white;
+  height: 60px;
+  width: 200px;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+body section .container .about button:hover {
+  transition: 0.2s all;
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  transform: scale(1.06);
+}
+body article {
+  position: fixed;
+  bottom: 6%;
+  left: 84%;
+}
+body article .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+body article .links div {
+  display: flex;
+  margin-left: 1rem;
+  border: 1px solid white;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body article .links div:hover {
+  transition: 0.2s all;
+  border: 1px solid hsl(300, 69%, 71%);
+  transform: scale(1.1);
+}
+body article .links div:first-child {
+  margin-left: 0;
+}
+body article .links div i {
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  transition: 0.2s all;
+}
+body article .links div i:hover {
+  transition: 0.2s all;
+  color: hsl(300, 69%, 71%);
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 1120px) {
+  .container {
+    max-width: 800px;
+  }
+  body section .container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  body section .container .about {
+    padding: 0;
+  }
+  body article {
+    position: fixed;
+    bottom: 6%;
+    left: 80%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container {
+    max-width: 600px;
+  }
+  body section .container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  body section .container .about {
+    padding: 0;
+  }
+}/*# sourceMappingURL=index.css.map */
