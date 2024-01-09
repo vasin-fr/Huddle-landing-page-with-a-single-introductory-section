@@ -19,6 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(257, 40%, 49%);
   background-image: url("../images/bg-desktop.svg");
+  height: 100vh;
 }
 body header {
   padding-top: 2rem;
@@ -82,7 +83,7 @@ body section .container .about button:hover {
 }
 body article {
   position: fixed;
-  bottom: 6%;
+  bottom: 5.5%;
   left: 84%;
 }
 body article .links {
